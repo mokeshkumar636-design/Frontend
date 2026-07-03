@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body{
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+
+        h1{
+            color: darkblue;
+            text-align: center;
+        }
+
+        h2{
+            color: darkred;
+            text-align: center;
+        }
+
+        form{
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        label{
+            color: navy;
+            font-weight: bold;
+        }
+
+        input, select, textarea{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        button{
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover{
+            background-color: darkgreen;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h1>Hindusthan Institute of Technology</h1>
+
+<main>
+    <h2>Student Registration</h2>
+
+    <form>
+
+        <label>Name:</label>
+        <input type="text">
+
+        <label>DOB:</label>
+        <input type="date">
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter a valid email">
+
+        <label>Password:</label>
+        <input type="password" placeholder="Enter password">
+
+        <label>Gender:</label><br>
+
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+
+        <br><br>
+
+        <label>City:</label>
+        <select>
+            <option>Select</option>
+            <option>Coimbatore</option>
+            <option>Chennai</option>
+        </select>
+
+        <label>Remarks:</label>
+        <textarea rows="3"></textarea>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</main>
+
+</body>
+</html> 

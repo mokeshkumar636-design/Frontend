@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body{
+            background: linear-gradient(135deg, #6a11cb, #ff4b8b);
+            font-family: Arial, sans-serif;
+        }
+
+        h1{
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2{
+            color: #ffe600;
+            text-align: center;
+        }
+
+        form{
+            width: 450px;
+            margin: auto;
+            padding: 25px;
+            background-color: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+        }
+
+        label{
+            color: #6a11cb;
+            font-weight: bold;
+        }
+
+        input, select, textarea{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 12px;
+            border: 2px solid #d3d3d3;
+            border-radius: 8px;
+        }
+
+        input:focus, select:focus, textarea:focus{
+            border-color: #ff4b8b;
+            outline: none;
+        }
+
+        .gender{
+            width: auto;
+            margin-right: 5px;
+        }
+
+        button{
+            background-color: #6a11cb;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover{
+            background-color: #ff4b8b;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h1>Hindusthan Institute of Technology</h1>
+
+<main>
+    <h2>Student Registration Form</h2>
+
+    <form>
+
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Date of Birth:</label>
+        <input type="date">
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Password:</label>
+        <input type="password" placeholder="Create password">
+
+        <label>Gender:</label><br>
+
+        <input type="radio" name="gender" class="gender"> Male
+        <input type="radio" name="gender" class="gender"> Female
+
+        <br><br>
+
+        <label>City:</label>
+        <select>
+            <option>Select City</option>
+            <option>Coimbatore</option>
+            <option>Chennai</option>
+            <option>Bangalore</option>
+            <option>Hyderabad</option>
+        </select>
+
+        <label>Remarks:</label>
+        <textarea rows="4" placeholder="Enter your remarks"></textarea>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</main>
+
+</body>
+</html>

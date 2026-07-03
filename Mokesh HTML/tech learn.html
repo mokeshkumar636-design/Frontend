@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+    <html>
+  <head>
+    <title>tech learn</title>
+   
+  </head>
+  <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial;
+    }
+
+    
+    .navbar{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        background:#333;
+        color:white;
+        padding:15px 30px;
+    }
+
+    .logo{
+        font-size:24px;
+        font-weight:bold;
+    }
+
+    .nav-links{
+        display:flex;
+        gap:20px;
+    }
+
+    .nav-links a{
+        color:green;
+        text-decoration:none;
+    }
+
+  
+    .hero{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        height:400px;
+        background:#f4f4f4;
+        flex-direction:column;
+    }
+
+    .hero h1{
+        font-size:40px;
+        margin-bottom:15px;
+    }
+
+    .hero p{
+        font-size:18px;
+        margin-bottom:20px;
+    }
+
+    .hero button{
+        padding:12px 25px;
+        background:#007bff;
+        color:white;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;
+    }
+
+    .hero button:hover{
+        background:#0056b3;
+    }
+
+    
+    .features{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap:20px;
+        padding:40px;
+    }
+
+    .card{
+        border:1px solid #ccc;
+        padding:30px;
+        text-align:center;
+        border-radius:10px;
+        transition:0.3s;
+    }
+
+    .card:hover{
+        transform:translateY(-5px);
+        box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    
+    footer{
+        background:#333;
+        color:green;
+        text-align:center;
+        padding:15px;
+    }
+
+    
+    @media (max-width:768px){
+
+        .navbar{
+            flex-direction:column;
+            gap:10px;
+        }
+
+        .nav-links{
+            flex-direction:column;
+            align-items:center;
+        }
+
+        .features{
+            grid-template-columns:1fr;
+        }
+    }
+</style>
+  <body>
+     <nav class="navbar">
+    <div class="logo">TechLearn</div>
+
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+
+<section class="hero">
+    <h1>Learn Web Development</h1>
+    <p>Master HTML, CSS and JavaScript.</p>
+    <button>Get Started</button>
+</section>
+
+
+<section class="features">
+    <div class="card">
+        <h2>HTML</h2>
+        <p>Build the structure of web pages.</p>
+    </div>
+
+    <div class="card">
+        <h2>CSS</h2>
+        <p>Style and design beautiful websites.</p>
+    </div>
+
+    <div class="card">
+        <h2>JavaScript</h2>
+        <p>Add interactivity and dynamic features.</p>
+    </div>
+</section>
+
+
+<footer>
+    <p>© 2026 TechLearn</p>
+</footer>
+  </body>
+</html>
